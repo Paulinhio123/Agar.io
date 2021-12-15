@@ -22,4 +22,4 @@ def run():
     if core.getMouseLeftClick() is not None:
         core.memory("centredecercle",core.getMouseLeftClick())
 
-core.main(setup, run)
+    core.main(setup, run)

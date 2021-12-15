@@ -2,6 +2,9 @@ import random
 from pygame.math import Vector2
 
 
+
+#Structure du CREEP
+
 class Creep :
     def __init__(self, largeur=400, hauteur=400) :
         self.rayon = 3

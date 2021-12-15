@@ -1,6 +1,8 @@
 import random
 from pygame.math import Vector2
 
+
+#Structure Joueur
 class Joueur :
 
     def __init__(self):
@@ -10,4 +12,7 @@ class Joueur :
         self.couleur = random.randstr(0,26)
 
     def mourir:
+        pass
+
+    def move :
         pass
