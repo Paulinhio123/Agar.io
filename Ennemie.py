@@ -13,5 +13,8 @@ class Ennemie :
     def move(self):
         pass
 
+    def show(self):
+        pass
+
 
 

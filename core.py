@@ -274,5 +274,42 @@ class Draw:
         else:
             pygame.draw.polygon(core.screen, color, points, width)
 
+    def text(color, texte, position, taille=30, font='Comic Sans MS'):
+        pygame.font.init()
+        myfont = pygame.font.SysFont('Comic Sans MS', 30)
+        textsurface = myfont.render(texte, False, color)
+        screen.blit(textsurface, position)
+
+
+class Texture:
+    def __init__(self, url, pos=pygame.Vector2(), offset=0, scaleSize=(100, 100), display=True,alpha=255):
+        self.ready = False
+        self.sprit = None
+        self.url = url
+        self.w = None
+        self.h = None
+        self.pos = pos
+        self.scaleSize = scaleSize
+        self.angle = pygame.Vector2()
+        self.offset = offset
+        self.display = display
+        self.alpha=alpha
+        self.box=False
+
+    def load(self):
+
+        self.sprit = pygame.image.load(self.url).convert_alpha()
+        self.sprit = pygame.transform.scale(self.sprit, self.scaleSize)
+        self.w = self.sprit.get_width()
+        self.h = self.sprit.get_width()
+        self.ready = True
+
+    def show(self):
+        if self.display:
+            if self.box:
+                core.Draw.rect((0,255,0),(self.pos.x,self.pos.y,self.w,self.h),1)
+            if self.ready:
+                self.sprit.set_alpha(self.alpha)
+                core.screen.blit(self.sprit, self.pos)
 
 
