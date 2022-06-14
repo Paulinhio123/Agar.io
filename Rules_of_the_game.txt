@@ -1,0 +1,35 @@
+Vous vous appretez à commencez une partie sur notre jeu Agar.io.
+
+#====================================================#
+#L'objectif ? Devenir le plus gros joueur de la maps #
+#Comment ? En récoltant le plus de point             #
+#====================================================#
+
+INSTRUCTIONS :
+
+	Déplacement : 
+		- Z : Avancez
+		- S : Reculez
+		- D : Droite
+		- G : Gauche
+
+	Gains des points : 
+		Les creeps sont les ressources du jeu. Ils vous permettent de 
+		gagnez rapidement et facilement des points. En les dévorants 
+		vous augmentez votre taille ainsi que votre score. 
+		Mais attention au joueur qui chercherons aussi à récupéré le 
+		plus de creeps tout en essayant de vous dévorez.
+		Si votre taille est suffisament grande vous pourrez dévorez les
+		joueurs adverses.	
+
+MODE DE DIFFICULTEE :
+
+	Cette version est en mode de difficultée simple. Les ennemis ont des 
+	deplacements aléatoire et ne sont pas attirées par votre joueur. 
+
+
+###########################################
+# Créateur : PETIT Paul, HAMADOUCHE Dylan #
+###########################################
+
+		
